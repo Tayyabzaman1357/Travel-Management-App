@@ -1,0 +1,16 @@
+import { IMG } from './images'
+
+export const carTypes = ['SUV', 'Sedan', 'Luxury', 'Electric']
+
+export const cars = [
+  { id: 'c1', name: 'Toyota RAV4', type: 'SUV', image: IMG.jeep, pricePerDay: 55, seats: 5, transmission: 'Automatic', fuel: 'Hybrid', rating: 4.7, reviews: 210, features: ['GPS', 'Bluetooth', 'Rear Camera', 'Cruise Control'], coords: { lat: 25.2048, lng: 55.2708 }, description: 'The dependable family SUV — spacious, efficient and ready for both city drives and desert highways.' },
+  { id: 'c2', name: 'Range Rover Sport', type: 'SUV', image: IMG.car3, pricePerDay: 145, seats: 5, transmission: 'Automatic', fuel: 'Petrol', rating: 4.9, reviews: 180, features: ['Leather Seats', '360° Camera', 'Heated Seats', 'Adaptive Cruise'], coords: { lat: 25.2048, lng: 55.2708 }, description: 'Commanding presence and first-class comfort for those who want to arrive in style.' },
+  { id: 'c3', name: 'Toyota Corolla', type: 'Sedan', image: IMG.car1, pricePerDay: 42, seats: 5, transmission: 'Automatic', fuel: 'Petrol', rating: 4.5, reviews: 320, features: ['Bluetooth', 'USB Charging', 'Airbags', 'Climate Control'], coords: { lat: 40.7128, lng: -74.006 }, description: 'The world’s favourite sedan — smooth, economical and perfect for city commutes.' },
+  { id: 'c4', name: 'BMW 5 Series', type: 'Sedan', image: IMG.car4, pricePerDay: 120, seats: 5, transmission: 'Automatic', fuel: 'Diesel', rating: 4.8, reviews: 150, features: ['Premium Sound', 'Wireless Charging', 'Park Assist', 'Ambient Lighting'], coords: { lat: 51.5074, lng: -0.1278 }, description: 'Executive luxury with a twin-turbo heart — the ultimate autobahn cruiser.' },
+  { id: 'c5', name: 'Mercedes S-Class', type: 'Luxury', image: IMG.car2, pricePerDay: 220, seats: 4, transmission: 'Automatic', fuel: 'Petrol', rating: 5.0, reviews: 95, features: ['Massage Seats', 'Burmester Audio', 'MBUX Assistant', 'Air Suspension'], coords: { lat: 48.8566, lng: 2.3522 }, description: 'The benchmark of automotive luxury — chauffeured comfort with cutting-edge tech.' },
+  { id: 'c6', name: 'Porsche 911 Carrera', type: 'Luxury', image: IMG.car3, pricePerDay: 340, seats: 2, transmission: 'Automatic', fuel: 'Petrol', rating: 4.9, reviews: 88, features: ['Sport Chrono', 'Launch Control', 'Sport Exhaust', 'Bose Audio'], coords: { lat: 41.9028, lng: 12.4964 }, description: 'An icon reborn — 450hp of pure driving joy for unforgettable coastal roads.' },
+  { id: 'c7', name: 'Tesla Model 3', type: 'Electric', image: IMG.tesla, pricePerDay: 85, seats: 5, transmission: 'Automatic', fuel: 'Electric', rating: 4.8, reviews: 260, features: ['Autopilot', 'Supercharging', 'Glass Roof', '15" Touchscreen'], coords: { lat: 37.7749, lng: -122.4194 }, description: 'Silent, swift and sustainable — zero emissions with zero compromise on fun.' },
+  { id: 'c8', name: 'Tesla Model X', type: 'Electric', image: IMG.car4, pricePerDay: 150, seats: 7, transmission: 'Automatic', fuel: 'Electric', rating: 4.9, reviews: 140, features: ['Falcon Doors', 'Autopilot', '7 Seats', 'Huge Range'], coords: { lat: 37.7749, lng: -122.4194 }, description: 'The electric SUV with futuristic falcon doors — space for the whole family, speed for the driver.' },
+]
+
+export const getCar = (id) => cars.find((c) => c.id === id)
